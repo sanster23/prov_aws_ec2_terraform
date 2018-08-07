@@ -2,15 +2,15 @@ resources:
 # Automation scripts repo
   - name: aws_ec2_tf_repo
     type: gitRepo
-    integration: "drship_github"
+    integration: "git_ship"
     versionTemplate:
-      sourceName: "devops-recipes/prov_aws_ec2_terraform"
+      sourceName: "sanster23/prov_aws_ec2_terraform"
       branch: master
 
 # AWS credentials
   - name: aws_ec2_tf_creds
     type: integration
-    integration: "drship_aws"
+    integration: "aws_ship"
 
 # Terraform State
   - name: aws_ec2_tf_state
