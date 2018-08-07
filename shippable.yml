@@ -1,5 +1,5 @@
 resources:
-# Automation scripts repo
+# Automation scripts source repo
   - name: aws_ec2_tf_repo
     type: gitRepo
     integration: "git_ship"
