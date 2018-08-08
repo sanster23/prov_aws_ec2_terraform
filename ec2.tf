@@ -18,7 +18,7 @@ resource "aws_instance" "ec2Instances" {
   availability_zone = "${lookup(var.availability_zone, var.vpc_region)}"
   instance_type = "${var.inst_type}"
   key_name = "${aws_key_pair.sshKeyPair.key_name}"
-  subnet_id = "${var.vpc_public_sn_id}"
+  subnet_id = "subnet-295cd875"
   associate_public_ip_address = true
   source_dest_check = false
 
