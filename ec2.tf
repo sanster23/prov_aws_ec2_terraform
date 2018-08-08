@@ -18,12 +18,12 @@ resource "aws_instance" "ec2Instances" {
   availability_zone = "${lookup(var.availability_zone, var.vpc_region)}"
   instance_type = "${var.inst_type}"
   key_name = "${aws_key_pair.sshKeyPair.key_name}"
-  subnet_id = "subnet-14763d5e"
+  subnet_id = "subnet-2090a51d"
   associate_public_ip_address = true
   source_dest_check = false
 
   security_groups = [
-    "${var.vpc_public_sg_id}"]
+    "subnet-2090a51d"]
 
   tags = {
     Name = "ec2Instances${count.index}"
